@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.App {
+  text-align: center;
+  font-family:Inconsolata, mono;
+}
+
+
+.App-header {
+  background-color: pink;
+  background-image: url('./assets/korean-bbq-8064w.jpg');
+  background-size:75%;
+  background-position:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom:20px;
+}
+h1{
+  background-color: rgba(0,0,0,.6);
+  box-shadow: 6px 5px 5px black;
+}
+.App-link {
+  color: #61dafb;
+}
+
+.receipt-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+li{
+  list-style: none;
+  text-align:left;
+  padding: 10px;
+  color:black;
+  line-height:200%;
+  
+}
+
+.receipt-Card{
+  text-align:left;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin: 5px 10px;
+  justify-content:center;
+  border-radius: 10px;
+  box-shadow: 6px 5px 5px lightgray;
+  width:30%;
+  background-image: url('./assets/istockphoto-626374442-612x612.jpg');
+  background-position:center;
+
+}
+
+.receipt-Card h2{
+  margin-left: 40px;
+}
+
+.foodClass{
+  font-weight:bold;
+  color:black;
+  padding:3px;
+  background-color:white;
+  text-decoration:underline;
+  color: darkblue;
+  width: 100%;
+  border-radius: 10px;
+  margin: 3px;
+  margin-left:0px;
+}
