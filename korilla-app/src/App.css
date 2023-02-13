@@ -34,3 +34,7 @@
   font-size: 2rem;
   line-height: 3.5rem;
 }
+
+.Order span {
+  color: rgb(32, 32, 112);
+}
