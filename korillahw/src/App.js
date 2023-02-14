@@ -1,6 +1,5 @@
 import './App.css';
 import Receipt from './Components/Receipts';
-import Paid from './Components/Paid'
 
 function App() {
   const receipts = [
