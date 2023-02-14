@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Person from './components/Person'
 // PART II 
 // PLEASE NOTE THAT PART I CODE CAN BE FOUND COMMENTED BELOW THIS CODE 
 // Value disappear tested : first object disappears
@@ -63,22 +63,37 @@ const receipts = [
   },
 ];
 
-const receiptNotPaid = () =>
+const receiptNotPaid = (person, main, protein, rice, sauce, toppings, drink, cost) =>
   receipts.map((receipt, index) =>
     !receipt.paid ? (
       <ul className="person-order">
-        <li id="list"><h2>{receipt.person}</h2></li>
-        <li id="list"><h4>Main: {receipt.order.main}</h4></li>
-        <li id="list"><h4>Protein: {receipt.order.protein}</h4></li>
-        <li id="list"> <h4>Rice: {receipt.order.rice}</h4></li>
-        <li id="list"><h4>Sauce: {receipt.order.sauce}</h4></li>
-        <li id="list"><h4>Toppings: {receipt.order.toppings[0]}</h4></li>
-        <li id="list"> <h4>Drink: {receipt.order.drink}</h4></li>
-        <li id="list"><h4>Cost: {receipt.order.cost}</h4></li>
+        <li id="list"><h2>{person =receipt.person}</h2></li>
+        <li id="list"><h4>Main: {main=receipt.order.main}</h4></li>
+        <li id="list"><h4>Protein: {protein=receipt.order.protein}</h4></li>
+        <li id="list"> <h4>Rice: {rice=receipt.order.rice}</h4></li>
+        <li id="list"><h4>Sauce: {sauce=receipt.order.sauce}</h4></li>
+        <li id="list"><h4>Toppings: {toppings=receipt.order.toppings[0]}</h4></li>
+        <li id="list"> <h4>Drink: {drink=receipt.order.drink}</h4></li>
+        <li id="list"><h4>Cost: {cost=receipt.order.cost}</h4></li>
       </ul>
     ) : (
       ""
     )
+  );
+  
+
+  const allReceipts = (person, main, protein, rice, sauce, toppings, drink, cost) =>
+  receipts.map((receipt, index) =>
+      <ul className="person-order">
+        <li id="list"><h2>{person =receipt.person}</h2></li>
+        <li id="list"><h4>Main: {main=receipt.order.main}</h4></li>
+        <li id="list"><h4>Protein: {protein=receipt.order.protein}</h4></li>
+        <li id="list"> <h4>Rice: {rice=receipt.order.rice}</h4></li>
+        <li id="list"><h4>Sauce: {sauce=receipt.order.sauce}</h4></li>
+        <li id="list"><h4>Toppings: {toppings=receipt.order.toppings[0]}</h4></li>
+        <li id="list"> <h4>Drink: {drink=receipt.order.drink}</h4></li>
+        <li id="list"><h4>Cost: {cost=receipt.order.cost}</h4></li>
+      </ul>
   );
 
 function App() {
@@ -88,7 +103,7 @@ function App() {
         <h1>Korilla</h1>
       </header>
       <main>
-        <div className="person">{receiptNotPaid()}</div>
+        <div className="person"><Person  person1={allReceipts()} person2={receiptNotPaid()}/></div>
       </main>
     </div>
   );
