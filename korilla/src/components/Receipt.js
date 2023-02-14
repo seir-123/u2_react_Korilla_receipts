@@ -1,8 +1,9 @@
+
 const Receipt = (props) => {
 
     return (
-        <div>
-            <h2>{props.person}</h2>
+        <div className="receipt-card">
+            <h2 style={{ color: 'white'}}>{props.person}</h2>
             <p>Main: {props.main}</p>
             <p>Protein: {props.protein}</p>
             <p>Rice: {props.rice}</p>
