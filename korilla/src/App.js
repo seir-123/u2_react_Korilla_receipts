@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Receipt from './components/receipt';
 
 const receipts = [
   {
@@ -63,22 +64,51 @@ const receipts = [
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <header className="App-header">
+        <h1>Korilla Receipts</h1>
+       </header>
+       <main>
+        <Receipt
+        person={receipts[0].person}
+        main={receipts[0].order.main}
+        protein={receipts[0].order.protein}
+        rice={receipts[0].order.rice}
+        sauce={receipts[0].order.sauce}
+        drink={receipts[0].order.drink}
+        cost={receipts[0].order.cost}
+        />
+
+        <Receipt
+        person={receipts[1].person}
+        main={receipts[1].order.main}
+        protein={receipts[1].order.protein}
+        rice={receipts[1].order.rice}
+        sauce={receipts[1].order.sauce}
+        drink={receipts[1].order.drink}
+        cost={receipts[1].order.cost}
+        />
+
+        <Receipt 
+        person={receipts[2].person}
+        main={receipts[2].order.main}
+        protein={receipts[2].order.protein}
+        rice={receipts[2].order.rice}
+        sauce={receipts[2].order.sauce}
+        drink={receipts[2].order.drink}
+        cost={receipts[2].order.cost}
+        />
+
+        <Receipt 
+        person={receipts[3].person}
+        main={receipts[3].order.main}
+        protein={receipts[3].order.protein}
+        rice={receipts[3].order.rice}
+        sauce={receipts[3].order.sauce}
+        drink={receipts[3].order.drink}
+        cost={receipts[3].order.cost}
+        />
+       </main>
     </div>
   );
-}
-
+  }
 export default App;
