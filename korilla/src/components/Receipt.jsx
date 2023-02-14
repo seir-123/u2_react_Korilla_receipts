@@ -4,14 +4,14 @@ const Receipt = (props) => {
         return (
             <div className="receipt-card">
                 <h2>{props.person}</h2>
-                <p><span>Main:</span> {props.main}</p>
-                <p><span>Protein:</span> {props.protein}</p>
-                <p><span>Rice:</span> {props.rice}</p>
-                <p><span>Sauce:</span> {props.sauce}</p>
-                <p><span>Toppings:</span> {props.toppings.join(', ')}</p>
-                <p><span>Drink:</span> {props.drink}</p>
+                <p><span>Main</span><br />{props.main}</p>
+                <p><span>Protein</span><br />{props.protein}</p>
+                <p><span>Rice</span><br />{props.rice}</p>
+                <p><span>Sauce</span><br />{props.sauce}</p>
+                <p><span>Toppings</span><br />{props.toppings.join(', ')}</p>
+                <p><span>Drink</span><br />{props.drink}</p>
                 <hr className="divider" />
-                <p className="total"><span>Total:</span> ${props.cost}</p>
+                <p className="total">Total ${props.cost}</p>
             </div>
         )
     } 
