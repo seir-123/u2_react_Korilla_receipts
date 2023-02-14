@@ -66,17 +66,6 @@ function App() {
         <h1>Korilla</h1>
       </header>
       <div className="Receipts">
-        {/* <Receipt
-          person={receipts.map((receipt) => receipt.person)}
-          orderMain={receipts.map((receipt) => receipt.order.main)}
-          orderProtein={receipts.map((receipt) => receipt.order.protein)}
-          orderRice={receipts.map((receipt) => receipt.order.rice)}
-          orderSauce={receipts.map((receipt) => receipt.order.sauce)}
-          orderDrink={receipts.map((receipt) => receipt.order.drink)}
-          orderCost={receipts.map((receipt) => receipt.order.cost)}
-          orderToppings={receipts.map((receipt) => receipt.order.toppings)}
-          orderPaid={receipts.map((receipt) => receipt.paid)}
-        /> */}
         <Receipt
           person={receipts[0].person}
           orderMain={receipts[0].order.main}
