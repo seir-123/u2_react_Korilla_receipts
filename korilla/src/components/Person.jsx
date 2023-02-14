@@ -7,7 +7,7 @@ function Person (props) {
             </div>
         <div className="">
             <div id="person2">
-                <div><h1>PART II</h1></div>
+                <div><h1>PART II (Disappears)</h1></div>
                 {props.person2}
             </div>
         </div>
