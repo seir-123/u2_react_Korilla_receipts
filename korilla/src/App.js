@@ -73,6 +73,7 @@ import './App.css'
       <header className="App-header">
       {receipts.map((receipt)=> {
         if (!receipt.paid) {
+        
           return (
             <Receipt id = {receipt.id}
             person = {receipt.person}
@@ -83,8 +84,7 @@ import './App.css'
             sauce = {receipt.order.sauce}
             drink = {receipt.order.drink}
             cost = {receipt.order.cost}
-            toppings = {receipt.order.toppings}
-            /> 
+             /> 
           )
         }
         return null
