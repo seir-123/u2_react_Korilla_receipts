@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.receipt-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.receipt-individual {
+  border: 1px solid orange;
+  text-align: left;
+  padding: 10px;
+  width: 250px;
+}
+
+span {
+  color: #713890;
+}
+
+.toppings {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
