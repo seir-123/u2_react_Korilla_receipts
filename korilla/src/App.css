@@ -1,6 +1,7 @@
 .App {
-  text-align: center;
-  
+ text-align: center;
+ font-size: 25px; 
+
 }
 
 .App-logo {
@@ -44,5 +45,13 @@
   align-items: center;
   justify-content: space-between;
   border: 2px solid white;
+  margin:auto;
   
 }
+
+Receipt.person {
+  color: blue;
+}
+
+
+
