@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+.hname{
+  color: rgb(93, 33, 80);
+}
+main{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.list{
+    border: 1px solid rgb(255, 123, 0);
+}
+
