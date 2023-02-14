@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  border: solid orange 1px;
+}
+.heading {
+  color: purple;
+}
