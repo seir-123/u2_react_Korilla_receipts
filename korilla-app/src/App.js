@@ -62,16 +62,16 @@ const receipts = [
 
 function App() {
   return (
-    <div className="App">
-        
+    <div className="App"> 
       
       <main>
-        <div className="receipts">
+        <h1>Korilla Receipts</h1>
+        <div className="receipts-con">
 
           {receipts.map((receipt)=>{
             if(receipt.paid !== true){
             return(
-              <div>
+              <div className="class">
                 <ReceiptsComp
               paid ={receipt.paid}
               person ={receipt.person}

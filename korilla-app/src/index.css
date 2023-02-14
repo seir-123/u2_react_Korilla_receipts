@@ -16,6 +16,7 @@ ul{
 
 }
 .receiptSlots{
+
   height: 300px;
   width: 300px;
   background-color: rgb(244, 224, 201);
@@ -27,4 +28,11 @@ ul{
 .noshow{
   display: none;
   background-color: aliceblue;
+}
+
+
+.receipts-con{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
