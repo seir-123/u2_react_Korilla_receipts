@@ -67,7 +67,7 @@ function App() {
         <h1>Korilla</h1>
       </header>
       <main>
-        <div className= 'jeremy'>
+        <div>
           <Reciept person={receipts[0].person}
                     main={receipts[0].order.main}
                     protein={receipts[0].order.protein}
@@ -77,7 +77,7 @@ function App() {
                     drink={receipts[0].order.drink}
                     cost={receipts[0].order.cost}/>
         </div>
-        <div className= 'tiffany'>
+        <div>
           <Reciept person={receipts[1].person}
                     main={receipts[1].order.main}
                     protein={receipts[1].order.protein}
@@ -87,7 +87,7 @@ function App() {
                     drink={receipts[1].order.drink}
                     cost={receipts[1].order.cost}/>
         </div>
-        <div className= 'brittany'>
+        <div>
           <Reciept person={receipts[2].person}
                     main={receipts[2].order.main}
                     protein={receipts[2].order.protein}
@@ -97,7 +97,7 @@ function App() {
                     drink={receipts[2].order.drink}
                     cost={receipts[2].order.cost}/>
         </div>
-        <div className= 'tylus'>
+        <div>
           <Reciept person={receipts[3].person}
                     main={receipts[3].order.main}
                     protein={receipts[3].order.protein}
