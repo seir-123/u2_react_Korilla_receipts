@@ -1,4 +1,4 @@
-import Receipts from "./components/receipts";
+import ReceiptsComp from "./components/ReceiptsFile";
 
 const receipts = [
   {
@@ -63,55 +63,36 @@ const receipts = [
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         
-      </header>
       
       <main>
         <div className="receipts">
-            {/* <div className='receipt1'>
-              <Receipts receiptsArr= {receipts} />
-            </div> */}
-            <div className='receipt2'>
-              <Receipts
-              person ={receipts[1].person}
-              main ={receipts[1].order.main}
-              protein ={receipts[1].order.protein}
-              rice ={receipts[1].order.rice}
-              sauce ={receipts[1].order.sauce}
-              drink ={receipts[1].order.drink}
-              toppings ={receipts[1].order.toppings}
 
-              cost ={receipts[1].order.cost}            
+          {receipts.map((receipt)=>{
+            if(receipt.paid !== true){
+            return(
+              <div>
+                <ReceiptsComp
+              paid ={receipt.paid}
+              person ={receipt.person}
+              main ={receipt.order.main}
+              protein ={receipt.order.protein}
+              rice ={receipt.order.rice}
+              sauce ={receipt.order.sauce}
+              drink ={receipt.order.drink}
+              toppings ={receipt.order.toppings}
+              cost ={receipt.order.cost}     
               />
-            </div>
-            <div className='receipt3'>
-              <Receipts
-              person ={receipts[2].person}
-              main ={receipts[2].order.main}
-              protein ={receipts[2].order.protein}
-              rice ={receipts[2].order.rice}
-              sauce ={receipts[2].order.sauce}
-              drink ={receipts[2].order.drink}
-              toppings ={receipts[2].order.toppings}
+            </div> 
+            )}
+          }
 
-              cost ={receipts[2].order.cost}            
-              />
-            </div>
-            <div className='receipt4'>
-              <Receipts
-              person ={receipts[3].person}
-              main ={receipts[3].order.main}
-              protein ={receipts[3].order.protein}
-              rice ={receipts[3].order.rice}
-              sauce ={receipts[3].order.sauce}
-              drink ={receipts[3].order.drink}
-              toppings ={receipts[3].order.toppings}
-              cost ={receipts[3].order.cost}    
+          )}
+          
 
-              />
-            </div>
 
+       
+        
           </div>
       </main>
     </div>

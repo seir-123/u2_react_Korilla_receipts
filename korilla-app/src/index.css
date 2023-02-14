@@ -23,8 +23,8 @@ ul{
   box-shadow: 1px 1px 1px  rgb(115, 112, 112);
 }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} 
+
+.noshow{
+  display: none;
+  background-color: aliceblue;
+}
