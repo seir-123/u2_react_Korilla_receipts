@@ -58,7 +58,7 @@ import './App.css'
         drink: 'Pineapple Jarritos',
         cost: 23,
       },
-      paid: true,
+      paid: false,
     },
   ];
 

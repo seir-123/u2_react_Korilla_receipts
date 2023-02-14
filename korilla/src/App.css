@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -17,11 +18,11 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   color: white;
+  border: 2px white solid;
+ 
 }
 
 .App-link {
@@ -35,4 +36,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.receipt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
