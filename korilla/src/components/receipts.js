@@ -6,7 +6,7 @@ const Receipts = () => {
       {purchases.map((data, key) => {
         if(data.paid == false){
           return(
-            <div className="receipt-individual">
+            <div key={key} className="receipt-individual">
               <h2>{data.person}</h2>
               <h3><span>Main:</span> {data.order.main}</h3>
               <h3><span>Protein:</span> {data.order.protein}</h3>
