@@ -1,5 +1,5 @@
 const Receipts = (props) => {
-  return (
+  return (props.paid) ? '' : ( //must pass props.paid into return, if (?) props.paid = true -> display nothing, else (:) -> display receipt
   <div className="receipt">
     <h2 className="person">{props.name}</h2>
     <p>Main: {props.main}</p>
@@ -13,3 +13,5 @@ const Receipts = (props) => {
 };
 
 export default Receipts
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
