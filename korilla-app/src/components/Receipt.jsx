@@ -13,7 +13,7 @@
                 <li>Drink: {props.drink}</li>
                 <li>Cost: ${props.cost}</li>
             </ul>
-            <button className="pay-btn" onClick={()=>prompt("Meal on me if you give me a passing grade, otherwise enter social security #")}>Pay Now</button>
+            <button className="pay-btn" onClick={()=>prompt("Meal on me if you give me a passing grade, otherwise enter social security # I mean credit card #")}>Pay Now</button>
         </div>
 
     )}else if(props.paid == true){

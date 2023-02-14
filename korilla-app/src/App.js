@@ -1,6 +1,6 @@
 import './App.css';
 import Receipt from './components/Receipt';
-
+import Table from './components/Footer'
 
 function App() {
 
@@ -73,55 +73,35 @@ function App() {
       </header>
       <div className='receipt-block'>      
       
-      <div className='receipt1'>
+        <div className='receipt1'>
           <Receipt person={receipts[0].person} 
-                main={receipts[0].order.main}  
-                protein={receipts[0].order.protein} 
-                rice={receipts[0].order.rice} 
-                sauce={receipts[0].order.sauce} 
-                toppings={receipts[0].order.toppings}  
-                drink={receipts[0].order.drink}
-                cost={receipts[0].order.cost}
-                paid={receipts[0].paid}  />   
+                main={receipts[0].order.main} protein={receipts[0].order.protein} rice={receipts[0].order.rice} 
+                sauce={receipts[0].order.sauce} toppings={receipts[0].order.toppings} drink={receipts[0].order.drink}
+                cost={receipts[0].order.cost} paid={receipts[0].paid}  />   
         </div>
 
         <div className='receipt2'>
             <Receipt person={receipts[1].person} 
-                main={receipts[1].order.main}  
-                protein={receipts[1].order.protein} 
-                rice={receipts[1].order.rice} 
-                sauce={receipts[1].order.sauce} 
-                toppings={receipts[1].order.toppings}  
-                drink={receipts[1].order.drink}
-                cost={receipts[1].order.cost}
-                paid={receipts[1].paid}  />
+                main={receipts[1].order.main} protein={receipts[1].order.protein} rice={receipts[1].order.rice} 
+                sauce={receipts[1].order.sauce} toppings={receipts[1].order.toppings} drink={receipts[1].order.drink}
+                cost={receipts[1].order.cost} paid={receipts[1].paid}  />
         </div>   
         
         <div className='receipt3'>
             <Receipt person={receipts[2].person} 
-                main={receipts[2].order.main}  
-                protein={receipts[2].order.protein} 
-                rice={receipts[2].order.rice} 
-                sauce={receipts[2].order.sauce} 
-                toppings={receipts[2].order.toppings}  
-                drink={receipts[2].order.drink}
-                cost={receipts[2].order.cost}
-                paid={receipts[2].paid}  />   
+                main={receipts[2].order.main} protein={receipts[2].order.protein} rice={receipts[2].order.rice} 
+                sauce={receipts[2].order.sauce} toppings={receipts[2].order.toppings} drink={receipts[2].order.drink}
+                cost={receipts[2].order.cost} paid={receipts[2].paid}  />   
         </div>
         
         <div className='receipt4'>
             <Receipt person={receipts[3].person} 
-                main={receipts[3].order.main}  
-                protein={receipts[3].order.protein} 
-                rice={receipts[3].order.rice} 
-                sauce={receipts[3].order.sauce} 
-                toppings={receipts[3].order.toppings}  
-                drink={receipts[3].order.drink}
-                cost={receipts[3].order.cost}
-                paid={receipts[3].paid}  />   
+                main={receipts[3].order.main} protein={receipts[3].order.protein} rice={receipts[3].order.rice} 
+                sauce={receipts[3].order.sauce} toppings={receipts[3].order.toppings} drink={receipts[3].order.drink}
+                cost={receipts[3].order.cost} paid={receipts[3].paid}  />   
         </div>
       </div>
-
+      <Table />
     </div>
   );
   }
