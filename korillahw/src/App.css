@@ -55,6 +55,10 @@ h2 {
   justify-content: right;
 }
 #check {
-  font-size: 14vmin;
+  margin-top: 100px;
+  font-family: Arial;
+  font-size: 12vmin;
+  color: red;
+  transform: rotate(-45deg)
 }
 
