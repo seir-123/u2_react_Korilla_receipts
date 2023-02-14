@@ -1,0 +1,62 @@
+  @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+
+.App {
+  text-align: center;
+}
+
+.title{
+  font-family: 'Happy Monkey', cursive;
+  color: red;
+  text-align: left;
+  font-size: 50px;
+  margin-left: 48px;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+.App-header{
+  height: 100px;
+  background-color:rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+}
+
+ul{
+  list-style: none;
+  text-align: left;
+}
+
+.receipt-block{
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+
+.receipt1:hover, .receipt2:hover, .receipt3:hover,  .receipt4:hover{
+  background-color: goldenrod;
+}
+
+button{
+  background-color: red;
+  color:black;
+  width:105px;
+  height:30px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover{
+  background:rgb(185, 153, 140);
+  font-weight: bold;
+}
+
+button:active{
+  background-color: rgb(245, 236, 236);
+  color:red;
+  font-weight: bold;
+  height: 34px;
+  width: 110px;
+}
