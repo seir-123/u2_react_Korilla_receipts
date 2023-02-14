@@ -1,15 +1,18 @@
 const Receipt = (props) => {
+
     return (
-        
-        <div> 
-<h3>{props.person}</h3>
-<p>{props.main}</p>
-
-
-
-
+        <div>
+            <h2>{props.person}</h2>
+            <p>Main: {props.main}</p>
+            <p>Protein: {props.protein}</p>
+            <p>Rice: {props.rice}</p>
+            <p>Sauce: {props.sauce}</p>
+            <p>Drink: {props.drink}</p>
+            <p>Cost: ${props.cost}</p>
+            
         </div>
     )
+
 }
 
 export default Receipt

@@ -1,7 +1,7 @@
-import Receipt from './components/Receipt'
-import './App.css';
+import Receipt from './components/Receipt.js'
+import './App.css'
 
-function App() {
+
 
   const receipts = [
     {
@@ -65,26 +65,34 @@ function App() {
 
 
 
-
+  function App() {
 
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Receipts</h1>
+      {receipts.map((receipt)=> {
+        if (!receipt.paid) {
+          return (
+            <Receipt id = {receipt.id}
+            person = {receipt.person}
+            order = {receipt.order}
+            main = {receipt.order.main}
+            protein = {receipt.order.protein}
+            rice = {receipt.order.rice}
+            sauce = {receipt.order.sauce}
+            drink = {receipt.order.drink}
+            cost = {receipt.order.cost}
+            toppings = {receipt.order.toppings}
+            /> 
+          )
+        }
+        return null
+      })
+      }
       </header>
       <main>
-        <Receipt 
-          person = {receipts[0].person}
-          order = {receipts[0].order}
-          main = {receipts[0].order.main}
-          protein = {receipts[0].order.protein}
-          rice = {receipts[0].order.rice}
-          sauce = {receipts[0].order.sauce}
-          drink = {receipts[0].order.drink}
-          cost = {receipts[0].order.cost}
-          toppings = {receipts[0].order.toppings}
-          />
+        
 
       </main>
     </div>
