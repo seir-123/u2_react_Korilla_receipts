@@ -3,7 +3,7 @@ const Receipt = (props) => {
 
     return (
         <div className="receipt-card">
-            <h2 style={{ color: 'white'}}>{props.person}</h2>
+            <h2 style={{ color: 'violet'}}>{props.person}</h2>
             <p>Main: {props.main}</p>
             <p>Protein: {props.protein}</p>
             <p>Rice: {props.rice}</p>

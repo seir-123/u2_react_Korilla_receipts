@@ -1,6 +1,6 @@
 .App {
  text-align: center;
- font-size: 25px; 
+ font-size: 24px; 
 
 }
 
@@ -42,9 +42,9 @@
 
 .receipt-card {
   align-items: center;
-  border: 2px solid white;
-  padding: 25px;
-  width: 25%;
+  border: 2px solid yellow;
+  padding: 20px;
+  width: 15%;
   height: 550px;
   
 }
