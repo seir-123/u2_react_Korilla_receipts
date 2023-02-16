@@ -67,7 +67,7 @@ function App() {
        <header className="App-header">
         <h1>Korilla Receipts</h1>
        </header>
-       <main>
+       <div className="people">
         <Receipt
         person={receipts[0].person}
         main={receipts[0].order.main}
@@ -76,8 +76,9 @@ function App() {
         sauce={receipts[0].order.sauce}
         drink={receipts[0].order.drink}
         cost={receipts[0].order.cost}
-        />
-
+        /> </div>
+        
+        <div>
         <Receipt
         person={receipts[1].person}
         main={receipts[1].order.main}
@@ -86,8 +87,9 @@ function App() {
         sauce={receipts[1].order.sauce}
         drink={receipts[1].order.drink}
         cost={receipts[1].order.cost}
-        />
-
+        /></div>
+        
+       <div>
         <Receipt 
         person={receipts[2].person}
         main={receipts[2].order.main}
@@ -96,7 +98,7 @@ function App() {
         sauce={receipts[2].order.sauce}
         drink={receipts[2].order.drink}
         cost={receipts[2].order.cost}
-        />
+        /></div>
 
         <Receipt 
         person={receipts[3].person}
@@ -107,8 +109,7 @@ function App() {
         drink={receipts[3].order.drink}
         cost={receipts[3].order.cost}
         />
-       </main>
-    </div>
+       </div>
   );
   }
 export default App;

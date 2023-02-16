@@ -2,15 +2,20 @@
   text-align: center;
 }
 .App-header {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #38598b;
+  justify-content: center;
   display: flex;
   font-size: 25px;
-  color: black;
+  color: #113f67;
 }
-main {
-  border: 2px orange solid;
-  border-right: 2px orange solid;
-  display: flex;
+.receipt {
+  border: 2px #113f67 solid;
+  background-color: #e7eaf6;
+  border-radius: 5px;
+  width: 50%;
+  height: 50%;
+  font-family: 'Oswald';
+  display: inline-block;
   margin-top: 15%;
   justify-content: center;
 }
