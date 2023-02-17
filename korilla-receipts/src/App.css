@@ -1,0 +1,19 @@
+.receipt-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.title {
+  text-align: center;
+}
+
+.receipt1 {
+  border-radius: 2px solid;
+  border-color: coral;
+}
+
+.App {
+  border-radius: 2px solid;
+  border-color: coral;
+}
