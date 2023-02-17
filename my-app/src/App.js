@@ -2,7 +2,7 @@ import './App.css'
 import Receipt from './Component/Receipt.jsx'
 
 
-sdadadsdsadasd
+
 const receipts = [
   {
     id: 1,
