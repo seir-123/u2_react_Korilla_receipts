@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  font-size: 15px;
+  color: purple;
+}
+.App {
+  text-align: center;
+}
+
+h1 {  
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  color: purple;
+  text-align: left;
+}
+
+.list {
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid #d47019;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: left;
+  background: white;
+}
+
+.list h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.list p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.list span {
+  font-weight: bold;
+}
+
+.list .paid {
+  color: green;
+}
+
+.list .unpaid {
+  color: red;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 30%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
