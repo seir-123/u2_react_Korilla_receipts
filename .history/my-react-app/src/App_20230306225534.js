@@ -64,11 +64,13 @@ const receipts = [
 
 function App() {
 
+  const [receipts, setReceipts] = useState();
+
   return (
     <div className="App">
       <h2> Korilla </h2>
       {receipts.map((receipt) => (
-        <Receipt key={receipt.id} receipt={receipt}/>
+        <Receipt key={receipt.id} receipt={receipt} handleReceiptPaid={handleReceiptPaid}/>
       ))}
     </div>
   );

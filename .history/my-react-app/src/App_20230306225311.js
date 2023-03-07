@@ -64,11 +64,26 @@ const receipts = [
 
 function App() {
 
+  const [receipts, setReceipts] = useState();
+
+  const unpaidReceipts = receipts.filter(receipt => !receipt.paid);
+
+  const handleReceiptPaid = (id) => {
+    const updatedReceipts = receipts.map(receipt => {
+      if (receipt.id === id) {
+        return { ...receipt, paid: true };
+      } else {
+        return receipt;
+      }
+    });
+    setReceipts(updatedReceipts);
+  };
+
   return (
     <div className="App">
       <h2> Korilla </h2>
       {receipts.map((receipt) => (
-        <Receipt key={receipt.id} receipt={receipt}/>
+        <Receipt key={receipt.id} receipt={receipt} handleReceiptPaid={handleReceiptPaid}/>
       ))}
     </div>
   );

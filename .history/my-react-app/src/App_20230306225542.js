@@ -64,6 +64,8 @@ const receipts = [
 
 function App() {
 
+  const [receipts, setReceipts] = useState();
+
   return (
     <div className="App">
       <h2> Korilla </h2>

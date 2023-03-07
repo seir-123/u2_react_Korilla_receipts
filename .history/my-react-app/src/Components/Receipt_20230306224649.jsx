@@ -1,5 +1,5 @@
-const Receipt = ({receipts}) => {
-    const { person, order } = receipts.order
+const Receipt = ({receipt}) => {
+    const { person, order } = receipt.order
     const { main, protein, rice, sauce, drink, cost } = order
 
     return (

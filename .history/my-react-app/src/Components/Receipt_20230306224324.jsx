@@ -1,9 +1,9 @@
-const Receipt = ({receipts}) => {
-    const { person, order } = receipts.order
+const Receipt = ({receipt}) => {
+    const { person, order } = receipt.order
     const { main, protein, rice, sauce, drink, cost } = order
 
     return (
-        <div className="Receipts">
+        <div>
             <h2> {person} Order: </h2>
             <p> Main: {main} ({protein}) </p>
             <p> Rice: {rice} </p>
