@@ -61,7 +61,6 @@ function App() {
       paid: true,
     },
   ];
-  let paidStatus;
   
   return (
     <>
